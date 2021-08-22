@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+    padding: 100px 30px;
+}
+
+.logo {
+    width: 20%;
+}
+
+h1 {
+    font-size: 20px;
+    color: hsl(0, 0%, 59%);
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-weight: 100;
+}
+
+h1 span {
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 25px;
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-1 img.illustration {
+    width: 100%;
+}
+
+form {
+    width: 90%;
+}
+
+form input {
+    width: 100%;
+    border: 1px solid hsla(0, 0%, 59%, .6);
+    border-radius: 50px;
+    margin-top: 10px;
+    height: 35px;
+    padding: 20px 20px 20px 30px;
+}
+
+form input.change {
+    border: 1px solid hsl(354, 100%, 66%);
+}
+
+form input::placeholder {
+    color: hsla(0, 0%, 59%, .4);
+}
+
+form button {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 10px;
+    height: 35px;
+    background-color: hsl(223, 87%, 63%);
+    margin-bottom: 70px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 10px hsla(223, 87%, 63%, .2);
+}
+
+form button:hover {
+    background-color: hsla(223, 87%, 63%, .8);
+}
+
+span.error {
+    color: hsl(354, 100%, 66%);
+    display: none;
+    font-size: 9px;
+    padding-left: 30px;
+    padding-top: 4px;
+}
+
+.section-1 span.change {
+    display: table;
+}
+
+.icons-wrapper {
+    margin-top: 125px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a i {
+    color: hsl(223, 87%, 63%);
+    font-size: 16px;
+    overflow: hidden;
+    border: 1px solid hsla(0, 0%, 59%, .1);
+    border-radius: 50px;
+    padding: 5px 5px;
+}
+
+a i:hover {
+    color: #fff;
+    background-color: hsl(223, 87%, 63%);
+}
+
+.copy {
+    font-size: 9px;
+    color: hsl(0, 0%, 59%);
+}
+
+@media (min-width: 992px) {
+    main {
+        padding: 50px 300px;
+    }
+    .section-1 img {
+        width: 10%;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    form {
+        display: flex;
+        width: 90%;
+    }
+    .input-wrapper {
+        width: 70%;
+        margin-right: 10px;
+    }
+    form button {
+        width: 30%;
+    }
+    .icons-wrapper {
+        margin-top: 50px;
+        width: 10%;
+    }
+}
